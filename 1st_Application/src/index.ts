@@ -91,7 +91,8 @@ let employee2: Employee = {
 }
 
 //Union Types
-function getNumber(myNumber: number) {
+//*Union types use කරලා funtion එකකට value types කිහිපයක් දෙන්න පුලුවන්
+function getNumber(myNumber: number | string) {
     console.log(myNumber);
 }
 getNumber("10");
