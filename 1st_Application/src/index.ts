@@ -89,3 +89,9 @@ let employee2: Employee = {
     id: 2,
     name: "Kamal"
 }
+
+//Union Types
+function getNumber(myNumber: number) {
+    console.log(myNumber);
+}
+getNumber("10");
