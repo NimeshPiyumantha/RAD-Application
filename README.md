@@ -9,6 +9,7 @@ This is a learning RAD-Application Development.
 
 ### - Front End
 * React 
+* Type Script 
 
 
 ###  - 1st_Application 
