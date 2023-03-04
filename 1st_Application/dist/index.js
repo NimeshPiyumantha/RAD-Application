@@ -57,3 +57,28 @@ let employee2 = {
     id: 2,
     name: "Kamal"
 };
+//Union Types
+//*Union types use කරලා funtion එකකට value types කිහිපයක් දෙන්න පුලුවන්
+function getNumber(myNumber) {
+    console.log(myNumber);
+}
+getNumber("10");
+//*string value එකක් pareInt කරන්න
+function getNumbers(myNumbers) {
+    //Narrowing
+    if (typeof myNumbers === 'string') {
+        return parseInt(myNumbers);
+    }
+    return myNumbers;
+}
+getNumbers("10");
+//Nullable values
+function generate(name) {
+    if (name) {
+        console.log(name);
+    }
+    else {
+        console.log("Nothing");
+    }
+}
+generate("null");
