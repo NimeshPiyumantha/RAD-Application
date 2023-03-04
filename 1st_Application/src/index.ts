@@ -63,3 +63,29 @@ let student: { id: number; name: string; age?: number } = {
     },
   };
   teacher.enroll(new Date());
+
+
+  //Type aliases
+  //*code එක repet වෙන එක නවත්තන්න 
+
+/** 
+let employee: { id: number; name: string; } = {
+    id: 1,
+    name: "Dasun"
+};
+*/ 
+
+type Employee= {
+    id: number;
+    name: string;
+}
+  
+let employee1: Employee = {
+    id: 1,
+    name: "Dasun"
+}
+
+let employee2: Employee = {
+    id: 2,
+    name: "Kamal"
+}
