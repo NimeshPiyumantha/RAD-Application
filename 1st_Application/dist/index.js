@@ -7,3 +7,4 @@ let age = 22;
 let firstName = 'Kamal';
 //Array
 let numbersArray; //any -onama type ekak
+let numberArray = [10, 20, 30, 40, "50"];
