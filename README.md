@@ -18,8 +18,11 @@ This is a learning RAD-Application Development.
 * Fix the error (Set-ExecutionPolicy RemoteSigned -Scope CurrentUser)
 * Run typeScript file (tsc index.ts)
 * Run javaScript file (node index.js)
-* init project file (tsc --init)
+* Init project file (tsc --init)
 * Refactor project and run (tsc)
+
+###  - React_Application
+* Install React(npx create-react-app test-app --template typescript)
 
 ###  
 ### Clone this repository ✅
