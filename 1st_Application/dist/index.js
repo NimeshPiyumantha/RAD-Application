@@ -5,3 +5,5 @@ console.log("Hello world");
 let age = 22;
 //String
 let firstName = 'Kamal';
+//Array
+let numbersArray; //any -onama type ekak
