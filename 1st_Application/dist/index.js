@@ -53,3 +53,7 @@ let employee1 = {
     id: 1,
     name: "Dasun"
 };
+let employee2 = {
+    id: 2,
+    name: "Kamal"
+};

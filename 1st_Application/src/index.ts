@@ -66,7 +66,7 @@ let student: { id: number; name: string; age?: number } = {
 
 
   //Type aliases
-  //*code එක repet වෙන එක නවත්තන්න 
+  //*code එක repet වෙන එක නවත්තන්න object එකක් හදාගෙන එක reuse කරනවා.
 
 /** 
 let employee: { id: number; name: string; } = {
