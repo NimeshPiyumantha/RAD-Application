@@ -26,3 +26,9 @@ function calculator(){
     let numbers: number[] = []
     return numbers;
 }
+
+//function with defined return type
+function calculatorAverage( subjectCount: number,totalMarks: number): number{
+    let average = (totalMarks/subjectCount)*100;
+   return average;
+}
