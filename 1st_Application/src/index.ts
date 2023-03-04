@@ -29,6 +29,9 @@ function calculator(){
 
 //function with defined return type
 function calculatorAverage( subjectCount: number,totalMarks: number): number{
-    let average = (totalMarks/subjectCount)*100;
+    let average = (totalMarks/subjectCount);
    return average;
 }
+
+let avgMarks=calculatorAverage(5,420);
+console.log(avgMarks);
