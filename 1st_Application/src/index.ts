@@ -96,3 +96,14 @@ function getNumber(myNumber: number | string) {
     console.log(myNumber);
 }
 getNumber("10");
+
+//*string value එකක් pareInt කරන්න
+function getNumbers(myNumbers: number | string) {
+    //Narrowing
+    if (typeof myNumbers === 'string') {
+        return parseInt(myNumbers)
+    }
+    return myNumbers;
+}
+getNumbers("10");
+
