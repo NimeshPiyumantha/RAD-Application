@@ -23,5 +23,6 @@ let person: [number,string] = [1,"Kamal"]//Data type 2k එක පාරට ද�
 
 //functions
 function calculator(){
-    return 0;
+    let numbers: number[] = []
+    return numbers;
 }
