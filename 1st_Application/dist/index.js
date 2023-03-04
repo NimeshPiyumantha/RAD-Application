@@ -36,3 +36,16 @@ function addNumber(firstNumber, secondNumber) {
 console.log(addNumber(10));
 //Objects
 let customer = { id: 1, name: "Dasun" };
+//
+let student = {
+    id: 1,
+    name: "Dasun",
+};
+let teacher = {
+    id: 1,
+    name: "Dasun",
+    enroll: (date) => {
+        console.log(date);
+    },
+};
+teacher.enroll(new Date());

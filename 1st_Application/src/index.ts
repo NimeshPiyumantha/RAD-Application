@@ -49,3 +49,17 @@ console.log(addNumber(10));
 
 //Objects
 let customer: { id: number; name: string } = { id: 1, name: "Dasun" };
+
+//
+let student: { id: number; name: string; age?: number } = {
+    id: 1,
+    name: "Dasun",
+  };
+  let teacher: { id: number; name: string; enroll: (date: Date) => void } = {
+    id: 1,
+    name: "Dasun",
+    enroll: (date: Date) => {
+      console.log(date);
+    },
+  };
+  teacher.enroll(new Date());
