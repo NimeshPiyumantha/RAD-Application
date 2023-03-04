@@ -21,7 +21,7 @@ let nameArray: string[] = [10,20,30,40,"50"]//number එකේ string value ත�
 //Tuples
 let person: [number,string] = [1,"Kamal"]//Data type 2k එක පාරට දානවනම් use කරන්නේ
 
-//functions
+//functions without defined a return type
 function calculator(){
     let numbers: number[] = []
     return numbers;
