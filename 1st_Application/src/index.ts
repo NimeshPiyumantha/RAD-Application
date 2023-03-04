@@ -4,3 +4,6 @@ console.log("Hello world");
 
 //Numbers
 let age: number =22;
+
+//String
+let firstName: string ='Kamal';
