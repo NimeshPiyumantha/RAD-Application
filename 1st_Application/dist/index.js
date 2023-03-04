@@ -34,3 +34,5 @@ function addNumber(firstNumber, secondNumber) {
     return firstNumber;
 }
 console.log(addNumber(10));
+//Objects
+let customer = { id: 1, name: "Dasun" };

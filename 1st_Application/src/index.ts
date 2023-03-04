@@ -46,3 +46,6 @@ function addNumber(firstNumber: number,secondNumber?: number): number {
 }
 
 console.log(addNumber(10));
+
+//Objects
+let customer: { id: number; name: string } = { id: 1, name: "Dasun" };
