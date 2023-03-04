@@ -18,6 +18,7 @@ This is a learning RAD-Application Development.
 * Run typeScript file (tsc index.ts)
 * Run javaScript file (node index.js)
 * init project file (tsc --init)
+* Refactor project and run (tsc)
 
 ###  
 ### Clone this repository ✅
