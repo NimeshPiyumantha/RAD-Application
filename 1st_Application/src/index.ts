@@ -37,7 +37,7 @@ let avgMarks=calculatorAverage(5,420);
 console.log(avgMarks);
 
 //function with optional parameters
-function addNumber(firstNumber: number,secondNumber?: number): number {
+function addNumber(firstNumber: number,secondNumber?: number): number {//optional දානවනම් ? දෙන්න ඔන
     if(secondNumber){
         return firstNumber + secondNumber;
     }
