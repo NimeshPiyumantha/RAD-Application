@@ -24,7 +24,7 @@ This is a learning RAD-Application Development.
 ###  - React_Application
 * Install React(npx create-react-app test-app --template typescript)
 * Not Detected Node Modules (npm install)
-* Install Tailwind css and other libarary(npm install -D tailwindcss postcss autoprefixe)
+* Install Tailwind css and other libarary(npm install -D tailwindcss postcss autoprefixer)
 * Create Config File tailwindcss(npx tailwindcss init -p)
 
 ###  
