@@ -3,13 +3,13 @@
 This is a learning RAD-Application Development.
 
 ### - Back End
-✔̷  node js
+* node js
 
 
 
 ### - Front End
-✔̷  React 
-✔̷  Type Script 
+* React 
+* Type Script 
 
 
 ###  - 1st_Application 
