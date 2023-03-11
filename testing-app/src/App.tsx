@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+/** @format */
+
+import React, { Component } from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 export default class App extends Component {
   render(): React.ReactNode {
-   
     return (
       <div className="App">
         <header className="App-header">
@@ -24,4 +25,4 @@ export default class App extends Component {
       </div>
     );
   }
-  }
+}
