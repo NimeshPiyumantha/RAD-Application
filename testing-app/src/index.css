@@ -1,3 +1,16 @@
+/** @format */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+    /* You can add more generic style here */
+    h1 {
+        @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-fuchsia-400
+    }
+    h2 {
+        @apply text-lg sm:text-xl md:text-2xl text-fuchsia-400
+    }
+}
