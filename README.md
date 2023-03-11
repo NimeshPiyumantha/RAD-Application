@@ -23,6 +23,7 @@ This is a learning RAD-Application Development.
 
 ###  - React_Application
 * Install React(npx create-react-app test-app --template typescript)
+* Not Detected Node Modules (npm install)
 
 ###  
 ### Clone this repository ✅
