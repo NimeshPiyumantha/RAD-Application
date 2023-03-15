@@ -80,7 +80,7 @@ npx tailwindcss init -p
 
 - Config Tailwind CSS In VScode 
 ``` 
-**Go to setting and search `Files assocition` set it `Item`:`*.css` `Value`:`tailwindcss`** 
+Go to setting and search **Files assocition** set it `Item`:`*.css` `Value`:`tailwindcss` 
 ```
 
 ###
