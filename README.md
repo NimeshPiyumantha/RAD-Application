@@ -78,7 +78,10 @@ npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ```
 
-- Config Tailwind CSS In VScode(Go to setting and search `Files assocition` set it `Item`:`*.css`,`Value`:`tailwindcss`)
+- Config Tailwind CSS In VScode 
+``` 
+**Go to setting and search `Files assocition` set it `Item`:`*.css` `Value`:`tailwindcss`** 
+```
 
 ###
 
