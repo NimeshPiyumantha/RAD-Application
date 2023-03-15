@@ -26,7 +26,7 @@ This is a learning RAD-Application Development.
 * Not Detected Node Modules (`npm install`)
 * Install Tailwind css and other libarary(`npm install -D tailwindcss postcss autoprefixer`)
 * Create Config File tailwindcss(`npx tailwindcss init -p`)
-
+* config Tailwind CSS In VScode(Go to setting and search `Files assocition` set it `Item`:`*.css`,`Value`:`tailwindcss`)
 ###  
 ### Clone this repository ✅
 ```md

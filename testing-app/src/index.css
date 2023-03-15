@@ -4,17 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-    /* You can add more generic style here */
-    h1 {
-        @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-teal-400
-    }
-    h2 {
-        @apply text-lg sm:text-xl md:text-2xl text-accent-navy-200
-    }
+  /* You can add more generic style here */
+  h1 {
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-teal-400;
+  }
+  h2 {
+    @apply text-lg sm:text-xl md:text-2xl text-accent-navy-200;
+  }
 
-    table{
-        @apply  text-lg sm:text-xl md:text-2xl text-teal-700
-    }
+  table {
+    @apply text-lg sm:text-xl md:text-2xl text-teal-700;
+  }
 }
