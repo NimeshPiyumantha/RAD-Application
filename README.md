@@ -15,6 +15,7 @@ This is a learning RAD-Application Development.
 
 ###  - 1st_Application 
 * Create new index.ts
+
 * Intall type script 
 ```
 npm install -g typescript
