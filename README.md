@@ -15,19 +15,60 @@ This is a learning RAD-Application Development.
 
 ###  - 1st_Application 
 * Create new index.ts
-* Intall type script ```npm install -g typescript```
-* Fix the error ```Set-ExecutionPolicy RemoteSigned -Scope CurrentUser```
-* Run typeScript file ```tsc index.ts```
-* Run javaScript file ```node index.js```
-* Init project file ```tsc --init```
-* Refactor project and run ```tsc```
+* Intall type script 
+```
+npm install -g typescript
+```
+
+* Fix the error 
+``` 
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+```
+
+* Run typeScript file 
+```
+tsc index.ts
+```
+
+* Run javaScript file 
+```
+node index.js
+```
+
+* Init project file 
+```
+tsc --init
+```
+
+* Refactor project and run 
+```
+tsc
+```
+
 
 ###  - React_Application
-* Install React ```npx create-react-app test-app --template typescript```
-* Not Detected Node Modules ```npm install```
-* Install Tailwind css and other libarary ```npm install -D tailwindcss postcss autoprefixer```
-* Create Config File tailwindcss ```npx tailwindcss init -p```
+* Install React 
+```
+npx create-react-app test-app --template typescript
+```
+
+* Not Detected Node Modules 
+```
+npm install
+```
+
+* Install Tailwind css and other libarary 
+```
+npm install -D tailwindcss postcss autoprefixer
+```
+
+* Create Config File tailwindcss 
+```
+npx tailwindcss init -p
+```
+
 * config Tailwind CSS In VScode(Go to setting and search `Files assocition` set it `Item`:`*.css`,`Value`:`tailwindcss`)
+
 ###  
 ### Clone this repository ✅
 ```md
