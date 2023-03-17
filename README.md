@@ -1,16 +1,16 @@
 # RAD-Application
 
-This is a learning RAD-Application Development.
+**This is a learning RAD-Application Development.**
 
 ### - Back End
 
-- node js
+- **node js**
 
 ### - Front End
 
-- React
-- Type Script
-- TailwindCSS
+- **React**
+- **Type Script**
+- **TailwindCSS**
 
 ### - 1st_Application
 
