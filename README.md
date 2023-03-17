@@ -40,13 +40,13 @@ tsc index.ts
 node index.js
 ```
 
-- Init project file
+- **Init project file**
 
 ```
 tsc --init
 ```
 
-- Refactor project and run
+- **Refactor project and run**
 
 ```
 tsc
@@ -54,7 +54,7 @@ tsc
 
 ### - React_Application
 
-- Install React
+- **Install React**
 
 ```
 npx create-react-app test-app --template typescript
