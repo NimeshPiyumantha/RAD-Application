@@ -12,7 +12,8 @@
 - **Type Script**
 - **TailwindCSS**
 
-### - 1st_Application
+##
+## - 1st_Application
 
 - **Create new index.ts**
 
@@ -52,7 +53,7 @@ tsc --init
 tsc
 ```
 
-### - React_Application
+## - React Application
 
 - **Install React**
 
@@ -83,7 +84,7 @@ npx tailwindcss init -p
 Go to setting and search **Files assocition** set it `Item`:`*.css` `Value`:`tailwindcss` 
 ```
 
-###
+##
 
 ### Clone this repository ✅
 
