@@ -60,25 +60,25 @@ tsc
 npx create-react-app test-app --template typescript
 ```
 
-- Not Detected Node Modules
+- **Not Detected Node Modules**
 
 ```
 npm install
 ```
 
-- Install Tailwind css and other libarary
+- **Install Tailwind css and other libarary**
 
 ```
 npm install -D tailwindcss postcss autoprefixer
 ```
 
-- Create Config File tailwindcss
+- **Create Config File tailwindcss**
 
 ```
 npx tailwindcss init -p
 ```
 
-- Config Tailwind CSS In VScode 
+- **Config Tailwind CSS In VScode** 
 ``` 
 Go to setting and search **Files assocition** set it `Item`:`*.css` `Value`:`tailwindcss` 
 ```
