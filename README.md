@@ -14,27 +14,27 @@
 
 ### - 1st_Application
 
-- Create new index.ts
+- **Create new index.ts**
 
-- Intall type script
+- **Intall type script**
 
 ```
 npm install -g typescript
 ```
 
-- Fix the error
+- **Fix the error**
 
 ```
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
-- Run typeScript file
+- **Run typeScript file**
 
 ```
 tsc index.ts
 ```
 
-- Run javaScript file
+- **Run javaScript file**
 
 ```
 node index.js
