@@ -15,7 +15,7 @@ export default class App extends Component {
 
   render(): React.ReactNode {
     return (
-      <div className="App bg-accent-navy-200 min-h-screen">
+      <div className="App bg-accent-navy-200 min-h-screen text-center">
         <Home />
         <About />
         <Contact />
