@@ -33,7 +33,7 @@ export default class Counter extends Component<CounterProps, CounterState> {
           </button>
           <button
             className="border border-red-600 px-4 py-2 text-red-600 font-semibold rounded-xl text-lg hover:bg-red-600 hover:text-white hover:drop-shadow-lg"
-            
+            onClick={this.decreaseCount}
           >
             Decrease
           </button>
