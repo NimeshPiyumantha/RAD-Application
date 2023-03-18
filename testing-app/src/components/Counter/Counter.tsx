@@ -6,15 +6,17 @@ type CounterState = {
 };
 export default class Counter extends Component<CounterProps, CounterState> {
   constructor(props: CounterProps) {
-    super(props);
+    super(props);//parent content එකට child propeties set කරන එක.
     this.state = {
       count: 0,
     };
   }
   increaseCount = () => {
+    //Increase Count by one
     this.setState({ count: this.state.count + 1 });
   };
   decreaseCount = () => {
+    //Decrease Count by one
     this.setState({ count: this.state.count - 1 });
   };
 
