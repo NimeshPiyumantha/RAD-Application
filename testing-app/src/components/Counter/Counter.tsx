@@ -13,17 +13,22 @@ export default class Counter extends Component<CounterProps, CounterState> {
   }
 
   // React DOM Life Cycle Methods
-  componentDidMount(): void {
+
+  /*Create*/ 
+  componentDidMount(): void {//DOM එකට inject වෙන වෙලාවට වැඩ කරන්නේ
     console.log("Console Did Mount");
   }
 
-  componentDidUpdate(): void {
+    /*Update*/ 
+  componentDidUpdate(): void {//DOM එක Update වෙන time එක
     console.log("Console Did Update");
   }
 
-  componentDidCatch(): void {
+    /*Destory*/ 
+  componentWillUnmount(): void {//DOM එකෙන් අයින් වෙන වෙලාවට වැඩ කරන්නේ
     console.log("Console Did Catch");
   }
+
 
   increaseCount = () => {
     //Increase Count by one
