@@ -13,11 +13,11 @@ export default class App extends Component {
   render(): React.ReactNode {
     return (
       <div className="App bg-white min-h-screen">
-        {/* <Home />
+        <Header/>
+         {/* <Home />
         <About />
         <Contact />
         <Profile /> */}
-        <Header/>
       </div>
     );
   }
