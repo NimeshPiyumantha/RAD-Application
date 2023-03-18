@@ -12,14 +12,14 @@ export default class Header extends Component {
               <div className="w-3/4 flex items-center">
                 <h1 className="font-Poppins">Nimma</h1>
               </div>
-              <div className="w-3/5">
+              <div className="w-1/2">
               
-                <nav className="flex w-full justify-between">
-                  <Link to={"/"}>Home</Link>
-                  <Link to={"/about"}>About</Link>
-                  <Link to={"/contact"}>Contact</Link>
+                <nav className="flex w-full gap-5">
+                  <Link to={"/"}><h4>Home</h4></Link>
+                  <Link to={"/about"}><h4>About</h4></Link>
+                  <Link to={"/contact"}><h4>Contact</h4></Link>
                   <Link to={"/profile"}>
-                    <img src={userImage} alt="userImage" className="w-7 h-7" />
+                    <img src={userImage} alt="userImage" className="w-12 h-12" />
                   </Link>
                 </nav>
               

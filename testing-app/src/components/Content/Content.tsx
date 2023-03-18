@@ -8,7 +8,7 @@ import Profile from "../../pages/Profile";
 export default class Content extends Component {
   render() {
     return (
-      <div className="mt-20">
+      <div className="mt-10">
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/about" element={<About />}></Route>
