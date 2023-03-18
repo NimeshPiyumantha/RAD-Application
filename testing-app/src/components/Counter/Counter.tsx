@@ -26,6 +26,7 @@ export default class Counter extends Component<CounterProps, CounterState> {
         </h1>
         <div className="flex space-x-3 mt-5">
           <button
+            disabled={this.state.count === 10 ? true : false}
             className="border border-green-600 px-4 py-2 text-green-600 font-semibold text-lg rounded-xl hover:bg-green-600 hover:text-white hover:drop-shadow-lg"
             onClick={this.increaseCount}
           >
