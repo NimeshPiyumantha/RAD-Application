@@ -24,11 +24,16 @@ export default class Counter extends Component<CounterProps, CounterState> {
     console.log("Console Did Update");
   }
 
-    /*Destory*/ 
-  componentWillUnmount(): void {//DOM එකෙන් අයින් වෙන වෙලාවට වැඩ කරන්නේ
-    console.log("Console Did Catch");
+    /*Destory*/  //method එකක් නෑ.
+
+
+  componentWillUnmount(): void {//DOM එකෙන්  Did mount වෙන වෙලාවට කලිම් මොකක් හරි කර ගන්න ඔන්නම් use කරන්නෙ.(Hooking Process එක වගේ)
+    console.log("Console Did Unmount");
   }
 
+ componentDidCatch(): void {//DOM එකෙන් Did mount වෙන වෙලාවට කලිම් handle නොකරපු execption තිබුනොත් එක handle කරගන්න use කරන method එක 
+  console.log("Console Did Catch");
+ }
 
   increaseCount = () => {
     //Increase Count by one
