@@ -11,7 +11,9 @@ export default class Counter extends Component<CounterProps, CounterState> {
       count: 0,
     };
   }
-
+  increaseCount = () => {
+    this.setState({ count: this.state.count + 1 });
+  };
 
 
   render() {
