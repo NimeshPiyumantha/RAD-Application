@@ -7,12 +7,21 @@ module.exports = {
         colors: {
             'accent': {
               'navy': {
-                200: "#535c68",
-                100: "#485468",
-                75: "#BFD2F2",
-                50: "#D7E3F7"
-              }
+                50: "#eff6ff",
+                100: "#dbeafe",
+                200: "#bfdbfe",
+                300: "#93c5fd",
+                400: "#60a5fa",
+                500: "#3b82f6",
+                600: "#2563eb",
+                700: "#1d4ed8",
+                800: "#1e40af",
+                900: "#1e3a8a",
+              },
             }
+          },
+          fontFamily:{
+            'Poppins':['Poppins','sans-serif']
           }
     },
   },
