@@ -18,9 +18,9 @@ export default class Header extends Component {
                   <h4>Contact</h4>
                   <h4>Profile</h4>
                   <img
-                    src="{userImage}"
+                    src={userImage}
                     alt="userImage"
-                    className="w-7 h-7"
+                    className="w-10 h-10"
                   ></img>
                 </div>
               </div>
