@@ -20,7 +20,7 @@ export default class Counter extends Component<CounterProps, CounterState> {
     return (
       <div className="">
         <h1>
-          Counter : <span></span>
+          Counter : <span>{this.state.count}</span>
         </h1>
         <div className="flex space-x-3 mt-5">
           <button
