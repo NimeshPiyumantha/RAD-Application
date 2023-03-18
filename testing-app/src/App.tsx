@@ -10,10 +10,6 @@ import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 
 export default class App extends Component {
-  componentDidMount(): void {
-    console.log("Hi HHi");
-  }
-
   render(): React.ReactNode {
     return (
       <div className="App bg-white min-h-screen p-5">
@@ -21,7 +17,7 @@ export default class App extends Component {
         <About />
         <Contact />
         <Profile /> */}
-        <Counter/>
+        <Counter />
       </div>
     );
   }
