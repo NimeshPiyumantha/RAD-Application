@@ -3,7 +3,6 @@
 import React, { Component } from "react";
 
 import "./App.css";
-import Counter from "./components/Counter";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
@@ -13,11 +12,10 @@ export default class App extends Component {
   render(): React.ReactNode {
     return (
       <div className="App bg-white min-h-screen p-5">
-        {/* <Home />
+        <Home />
         <About />
         <Contact />
-        <Profile /> */}
-        <Counter />
+        <Profile />
       </div>
     );
   }
