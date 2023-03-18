@@ -12,10 +12,10 @@ export default class App extends Component {
   render(): React.ReactNode {
     return (
       <div className="App bg-white min-h-screen p-5">
-        <Home />
+        {/* <Home />
         <About />
         <Contact />
-        <Profile />
+        <Profile /> */}
       </div>
     );
   }
