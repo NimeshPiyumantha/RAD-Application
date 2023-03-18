@@ -84,6 +84,11 @@ npx tailwindcss init -p
 Go to setting and search **Files assocition** set it `Item`:`*.css` `Value`:`tailwindcss` 
 ```
 
+- **Install React Router DOM** 
+```
+npm i react-router-dom
+```
+
 ##
 
 ### Clone this repository ✅
