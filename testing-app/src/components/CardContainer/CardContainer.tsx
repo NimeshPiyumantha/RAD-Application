@@ -51,7 +51,7 @@ export default class CardContainer extends Component<
 
   render() {
     return (
-      <div className="flex justify-center gap-6 p-4">
+      <div className="mt-3 grid grid-cols-4 gap-x-5 w-full border rounded">
         {this.state.cardList.map((card) => (
           <Card title={card.title} 
           description={card.description} 
