@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import Post from "../../components/Post/Post";
+import Post from "../../components/Post";
+
 
 type PostDetails = {
   id: string;
@@ -58,7 +59,7 @@ export default class Home extends Component <HomeProps,HomeState>{
     return(
       <div className="p-6">
         {this.state.postList.map((post, index) =>(
-          <Post  
+          <Post
           key={post.id}
           title={post.title}
           description={post.description}
