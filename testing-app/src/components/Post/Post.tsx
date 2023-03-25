@@ -14,7 +14,7 @@ export default class Post extends Component<PostProps,PostState> {
   render() {
     return (
       <div className='p-6 border border-slate-400 w-full rounded mt-2'>
-        <h3 className='text-center'>{this.props.title}</h3>
+        <h1 className='text-center font-bold'>{this.props.title}</h1>
         <p>{this.props.description}</p>
         <span className='w-full mt-3 flex space-x-3'>
         {this.props.tags.map((tagText) => (
