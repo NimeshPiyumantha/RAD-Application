@@ -1,10 +1,13 @@
 import React, { Component } from "react";
+import Post from "../../components/Post/Post";
 
 export default class Home extends Component {
   render() {
     return (
       <div className="p-6">
-        <h1>Home Page</h1>
+        <Post/>
+        <Post/>
+        <Post/>
       </div>
     );
   }
