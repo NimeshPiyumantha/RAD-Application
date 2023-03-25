@@ -92,6 +92,11 @@ Go to setting and search **Files assocition** set it `Item`:`*.css` `Value`:`tai
 npm i react-router-dom
 ```
 
+- **Install Material Icons**
+```
+npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
+```
+
 ##
 
 ### Clone this repository ✅
