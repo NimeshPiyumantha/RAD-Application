@@ -13,6 +13,7 @@
 - **TailwindCSS**
 
 ##
+
 ## - 1st_Application
 
 - **Create new index.ts**
@@ -79,12 +80,14 @@ npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 ```
 
-- **Config Tailwind CSS In VScode** 
-``` 
-Go to setting and search **Files assocition** set it `Item`:`*.css` `Value`:`tailwindcss` 
+- **Config Tailwind CSS In VScode**
+
+```
+Go to setting and search **Files assocition** set it `Item`:`*.css` `Value`:`tailwindcss`
 ```
 
-- **Install React Router DOM** 
+- **Install React Router DOM**
+
 ```
 npm i react-router-dom
 ```
