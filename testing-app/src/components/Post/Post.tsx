@@ -1,5 +1,6 @@
 import { type } from 'os';
 import React, { Component } from 'react'
+import Tag from '../Tag';
 
 type PostProps ={
     title:string;
@@ -16,9 +17,9 @@ export default class Post extends Component<PostProps,PostState> {
         <h3 className='text-center'>{this.props.title}</h3>
         <p>{this.props.description}</p>
         <span className='w-full mt-3 flex space-x-3'>
-            <span className='px-6 py-2 border border-slate-400 rounded'>
-                <h6>Tag 1</h6>
-            </span>
+        {this.props.tags.map((tagText) => (
+            <Tag text={tagText} />
+          ))}
         </span>
       </div>
     )
