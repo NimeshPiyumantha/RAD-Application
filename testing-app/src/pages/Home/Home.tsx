@@ -1,6 +1,15 @@
 import React, { Component } from "react";
 import Post from "../../components/Post/Post";
 
+type PostDetails={
+  id:string;
+  title:string;
+  description:React.ReactNode;
+  hourCount?:string;
+  lectureName:string;
+  tags:string[];
+};
+
 export default class Home extends Component {
   render() {
     return (
