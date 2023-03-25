@@ -19,15 +19,6 @@ export default class Post extends Component<PostProps,PostState> {
             <span className='px-6 py-2 border border-slate-400 rounded'>
                 <h6>Tag 1</h6>
             </span>
-            <span className='px-6 py-2 border border-slate-400 rounded'>
-                <h6>Tag 2</h6>
-            </span>
-            <span className='px-6 py-2 border border-slate-400 rounded'>
-                <h6>Tag 3</h6>
-            </span>
-            <span className='px-6 py-2 border border-slate-400 rounded'>
-                <h6>Tag 4</h6>
-            </span>
         </span>
       </div>
     )
