@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import Tag from '../Tag';
+import React, { Component } from "react";
+import Tag from "../Tag";
 
-type PostProps ={
+type PostProps = {
   id?: string;
   title: string;
   description: React.ReactNode;
@@ -28,10 +28,10 @@ export default class Post extends Component<PostProps, PostState> {
               <strong>Lecturer Name</strong> : {this.props.lecturerName}
             </p>
           ) : null}
-          {this.props.tags.map((tagText) => (
+        </span>
+        {this.props.tags.map((tagText) => (
             <Tag text={tagText} />
           ))}
-        </span>
       </div>
     );
   }

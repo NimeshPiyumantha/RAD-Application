@@ -62,7 +62,7 @@ export default class CardContainer extends Component<
     return (
       <div className="mt-3 grid grid-cols-4 gap-x-5 w-full">
         {this.state.cardList.map((card) => (
-          <Card title={card.title} 
+          <Card icon={card.icon} title={card.title} 
           description={card.description} 
           />
         ))}
