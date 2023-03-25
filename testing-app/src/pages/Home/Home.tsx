@@ -5,9 +5,7 @@ export default class Home extends Component {
   render() {
     return (
       <div className="p-6">
-        <Post/>
-        <Post/>
-        <Post/>
+        <Post title="Nowty Pasan" description="I am good Boy" tags={[]}/>
       </div>
     );
   }
