@@ -10,7 +10,7 @@ export default class Header extends Component {
 
     return (
       <header>
-        <div className="bg-white border-gray-200 px-4 h-16  dark:bg-gray-600 font-Poppins">
+        <div className="bg-white border-gray-200 px-4 h-16  dark:bg-gray-600 font-Poppins text-white">
           <div className="w-full h-full">
             <div className="flex w-full h-full items-center">
               <div className="w-3/4 flex justify-center">
