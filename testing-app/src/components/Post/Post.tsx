@@ -1,3 +1,4 @@
+import { type } from 'os';
 import React, { Component } from 'react'
 
 type PostProps ={
@@ -5,6 +6,8 @@ type PostProps ={
     description:string;
     tags:string[];
 };
+
+type PostState={};
 
 export default class Post extends Component {
   render() {
