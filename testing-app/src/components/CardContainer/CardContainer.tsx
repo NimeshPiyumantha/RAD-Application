@@ -1,17 +1,16 @@
-import { type } from "os";
 import React, { Component } from "react";
 import Card from "../Card/Card";
-
-type CardContainerProps = {};
-
-type CardContainerState = {
-  cardList: CardContainerDetails[];
-};
 
 type CardContainerDetails = {
   id: string;
   title: string;
   description: string;
+};
+
+type CardContainerProps = {};
+
+type CardContainerState = {
+  cardList: CardContainerDetails[];
 };
 
 export default class CardContainer extends Component<
