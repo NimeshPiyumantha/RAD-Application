@@ -6,7 +6,7 @@ export default class AboutIntro extends Component {
       <div className="text-center text-slate-900 p-6">
         <h1 className="mt-6">About Us</h1>
         <section className="w-full flex justify-center">
-          <p className="p-6 w-1/2 text-center">
+          <p className="p-6 w-3/5 text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
             voluptatum molestiae! Modi, doloribus fugit! Eius, odio!
             Necessitatibus repellendus eos magnam blanditiis aperiam nulla
