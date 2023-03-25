@@ -97,6 +97,10 @@ npm i react-router-dom
 npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
 ```
 
+- **Install Material UI**
+```
+npm install @mui/material @emotion/react @emotion/styled
+```
 ##
 
 ### Clone this repository ✅
