@@ -34,7 +34,7 @@ export default class Header extends Component {
                       className="w-8 h-8"
                     />
                   </NavLink>
-                  <NavLink to={"/logout"}> <LogoutIcon/> </NavLink>
+                  <NavLink to={"/logout"}> <h4> <LogoutIcon/> </h4> </NavLink>
                 </nav>
               </div>
             </div>
