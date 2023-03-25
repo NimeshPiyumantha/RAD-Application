@@ -41,6 +41,7 @@ export default class Home extends Component <HomeProps,HomeState>{
           description:
           (<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda ducimus recusandae velit ullam, quos a eum consequuntur et praesentium omnis nobis? Maxime velit nesciunt at aperiam perspiciatis necessitatibus, itaque esse. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda ducimus recusandae velit ullam, quos a eum consequuntur et praesentium omnis nobis? Maxime velit nesciunt at aperiam perspiciatis necessitatibus, itaque esse.</p>),
           hoursCount: 10,
+          lecturerName:"Pasan",
           tags: ["ui", "ux"],
         },
         {
