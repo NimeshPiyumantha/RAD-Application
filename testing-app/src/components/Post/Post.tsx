@@ -1,4 +1,3 @@
-import { type } from 'os';
 import React, { Component } from 'react'
 import Tag from '../Tag';
 
