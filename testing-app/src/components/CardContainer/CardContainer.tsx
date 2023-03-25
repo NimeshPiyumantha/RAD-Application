@@ -53,7 +53,9 @@ export default class CardContainer extends Component<
     return (
       <div className="flex justify-center gap-6 p-4">
         {this.state.cardList.map((card) => (
-          <Card title={card.title} description={card.description} />
+          <Card title={card.title} 
+          description={card.description} 
+          />
         ))}
       </div>
     );
