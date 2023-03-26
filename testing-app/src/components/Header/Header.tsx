@@ -34,7 +34,9 @@ export default class Header extends Component {
                       className="w-8 h-8"
                     />
                   </NavLink>
-                  <NavLink to={""}> <h4> <LogoutIcon/> </h4> </NavLink>
+                  <NavLink to={"/"} className="cursor-pointer">
+                    <LogoutIcon />
+                  </NavLink>
                 </nav>
               </div>
             </div>
