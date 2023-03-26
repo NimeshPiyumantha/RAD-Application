@@ -17,7 +17,7 @@ export default class Header extends Component {
               </div>
               <div className="w-1/2">
                 <nav className="flex w-full gap-5">
-                  <NavLink to={"/"} className={({isActive})=>(isActive ? activeLink: normalLink)}>
+                  <NavLink to={"/home"} className={({isActive})=>(isActive ? activeLink: normalLink)}>
                     <h4>Home</h4>
                   </NavLink>
                   <NavLink to={"/about"} className={({isActive})=>(isActive ? activeLink: normalLink)}>
