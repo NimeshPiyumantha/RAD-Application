@@ -6,7 +6,7 @@ export default class Profile extends Component {
         return (
             <>
                 <Header/>
-                <div className="p-6 mt-20">
+                <div className="p-6">
                     <h1>Profile Page</h1>
                 </div>
             </>
