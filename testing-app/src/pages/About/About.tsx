@@ -8,7 +8,7 @@ export default class About extends Component {
     return (
         <>
             <Header/>
-      <div className='p-6 mt-20'>
+      <div className='p-6'>
         <AboutIntro/>
        <CardContainer/>
       </div>

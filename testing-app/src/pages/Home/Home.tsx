@@ -97,7 +97,7 @@ export default class Home extends Component<HomeProps, HomeState> {
     return (
         <>
           <Header/>
-          <div className="p-6 mt-20">
+          <div className="p-6">
             {this.state.postList.map((post, index) => (
                 <Post
                     key={post.id}
