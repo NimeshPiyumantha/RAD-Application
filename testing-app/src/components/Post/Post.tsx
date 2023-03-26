@@ -15,7 +15,7 @@ export default class Post extends Component<PostProps, PostState> {
     render() {
         return (
             <div className="p-6 border border-slate-400 w-full rounded mt-2">
-                <h3 className="text-center">{this.props.title}</h3>
+                <h1 className="text-center">{this.props.title}</h1>
                 {this.props.description}
                 <span className="flex space-x-5">
           {this.props.hoursCount ? (
