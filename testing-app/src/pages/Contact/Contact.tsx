@@ -9,7 +9,7 @@ export default class Contact extends Component {
         return (
             <>
                 <Header/>
-                <div className="p-6">
+                <div className="p-6 mt-20">
                     <ContactIntro/>
                     <div className="mt-3">
                         <form className="w-full py-8 px-32 flex flex-col space-y-3">
