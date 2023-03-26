@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Post from "../../components/Post";
+import Header from "../../components/Header";
 
 
 type PostDetails = {
@@ -10,67 +11,105 @@ type PostDetails = {
   lecturerName?: string;
   tags: string[];
 };
-type HomeProps={};
-type HomeState={
-  postList:PostDetails[];
+
+type HomeProps = {};
+
+type HomeState = {
+  postList: PostDetails[];
 };
-export default class Home extends Component <HomeProps,HomeState>{
+
+export default class Home extends Component<HomeProps, HomeState> {
   constructor(props: HomeProps) {
     super(props);
     this.state = {
       postList: [
         {
           id: "1",
-          title: "Post 1",
-          description:
-            (<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda ducimus recusandae velit ullam, quos a eum consequuntur et praesentium omnis nobis? Maxime velit nesciunt at aperiam perspiciatis necessitatibus, itaque esse. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda ducimus recusandae velit ullam, quos a eum consequuntur et praesentium omnis nobis? Maxime velit nesciunt at aperiam perspiciatis necessitatibus, itaque esse.</p>),
-          hoursCount: 10,
-          tags: ["ui", "ux"],
+          title: "Lecture Day 01",
+          description: (
+              <p>
+                Lecture D01 - Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit. Eligendi alias laborum accusantium iusto molestias. Magnam
+                nisi atque, nihil, ex quaerat quam velit deserunt consequatur
+                soluta pariatur cumque accusamus consequuntur. Quidem! Lorem ipsum
+                dolor sit amet consectetur, adipisicing elit. Eligendi alias
+                laborum accusantium iusto molestias. Magnam nisi atque, nihil, ex
+                quaerat quam velit deserunt consequatur soluta pariatur cumque
+                accusamus consequuntur. Quidem! Lorem ipsum dolor sit amet
+                consectetur, adipisicing elit. Eligendi alias laborum accusantium
+                iusto molestias. Magnam nisi atque, nihil, ex quaerat quam velit
+                deserunt consequatur soluta pariatur cumque accusamus
+                consequuntur. Quidem!
+              </p>
+          ),
+          hoursCount: 8,
+          tags: ["intro", "typescript"],
         },
         {
           id: "2",
-          title: "Post 2",
-          description:
-          (<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda ducimus recusandae velit ullam, quos a eum consequuntur et praesentium omnis nobis? Maxime velit nesciunt at aperiam perspiciatis necessitatibus, itaque esse. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda ducimus recusandae velit ullam, quos a eum consequuntur et praesentium omnis nobis? Maxime velit nesciunt at aperiam perspiciatis necessitatibus, itaque esse.</p>),
-          hoursCount: 10,
-          tags: ["ui", "ux"],
+          title: "Lecture Day 02",
+          description: (
+              <p>
+                Lecture D02 - Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit. Eligendi alias laborum accusantium iusto molestias. Magnam
+                nisi atque, nihil, ex quaerat quam velit deserunt consequatur
+                soluta pariatur cumque accusamus consequuntur. Quidem! Lorem ipsum
+                dolor sit amet consectetur, adipisicing elit. Eligendi alias
+                laborum accusantium iusto molestias. Magnam nisi atque, nihil, ex
+                quaerat quam velit deserunt consequatur soluta pariatur cumque
+                accusamus consequuntur. Quidem! Lorem ipsum dolor sit amet
+                consectetur, adipisicing elit. Eligendi alias laborum accusantium
+                iusto molestias. Magnam nisi atque, nihil, ex quaerat quam velit
+                deserunt consequatur soluta pariatur cumque accusamus
+                consequuntur. Quidem!
+              </p>
+          ),
+          hoursCount: 6,
+          lecturerName: "Chanu",
+          tags: ["react", "tailwind"],
         },
         {
           id: "3",
-          title: "Post 3",
-          description:
-          (<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda ducimus recusandae velit ullam, quos a eum consequuntur et praesentium omnis nobis? Maxime velit nesciunt at aperiam perspiciatis necessitatibus, itaque esse. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda ducimus recusandae velit ullam, quos a eum consequuntur et praesentium omnis nobis? Maxime velit nesciunt at aperiam perspiciatis necessitatibus, itaque esse.</p>),
-          hoursCount: 10,
-          lecturerName:"Pasan",
-          tags: ["ui", "ux"],
-        },
-        {
-          id: "4",
-          title: "Post 4",
-          description:
-          (<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda ducimus recusandae velit ullam, quos a eum consequuntur et praesentium omnis nobis? Maxime velit nesciunt at aperiam perspiciatis necessitatibus, itaque esse. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda ducimus recusandae velit ullam, quos a eum consequuntur et praesentium omnis nobis? Maxime velit nesciunt at aperiam perspiciatis necessitatibus, itaque esse.</p>),
-          hoursCount: 10,
-          tags: ["ui", "ux","Step"],
+          title: "Lecture Day 03",
+          description: (
+              <p>
+                Lecture D03 - Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit. Eligendi alias laborum accusantium iusto molestias. Magnam
+                nisi atque, nihil, ex quaerat quam velit deserunt consequatur
+                soluta pariatur cumque accusamus consequuntur. Quidem! Lorem ipsum
+                dolor sit amet consectetur, adipisicing elit. Eligendi alias
+                laborum accusantium iusto molestias. Magnam nisi atque, nihil, ex
+                quaerat quam velit deserunt consequatur soluta pariatur cumque
+                accusamus consequuntur. Quidem! Lorem ipsum dolor sit amet
+                consectetur, adipisicing elit. Eligendi alias laborum accusantium
+                iusto molestias. Magnam nisi atque, nihil, ex quaerat quam velit
+                deserunt consequatur soluta pariatur cumque accusamus
+                consequuntur. Quidem!
+              </p>
+          ),
+          tags: ["Lifecycle", "rounting", "structure"],
         },
       ],
     };
   }
 
-  render(){
-    return(
-      <div className="p-6">
-        {this.state.postList.map((post, index) =>(
-          <Post
-          key={post.id}
-          title={post.title}
-          description={post.description}
-          hoursCount={post.hoursCount}
-          lecturerName={post.lecturerName}
-          tags={post.tags}
-          />
-        ))}
-      
-      </div>
+  render() {
+    return (
+        <>
+          <Header/>
+          <div className="p-6 mt-20">
+            {this.state.postList.map((post, index) => (
+                <Post
+                    key={post.id}
+                    title={post.title}
+                    description={post.description}
+                    hoursCount={post.hoursCount}
+                    lecturerName={post.lecturerName}
+                    tags={post.tags}
+                />
+            ))}
+          </div>
+        </>
     );
   }
 }
