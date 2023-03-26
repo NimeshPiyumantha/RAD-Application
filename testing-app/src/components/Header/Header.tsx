@@ -9,7 +9,6 @@ export default class Header extends Component {
     const normalLink = "cursor-pointer";
 
     return (
-      <header>
         <div className="bg-white border-gray-200 px-4 h-16  dark:bg-gray-600 font-Poppins text-white">
           <div className="w-full h-full">
             <div className="flex w-full h-full items-center">
@@ -42,7 +41,6 @@ export default class Header extends Component {
             </div>
           </div>
         </div>
-      </header>
     );
   }
 }
