@@ -3,6 +3,12 @@ import { Button, TextField } from "@mui/material";
 
 type ContactFormProps = {};
 
+type ContactFormState = {
+  email: string;
+  message: string;
+  isValidEmail: boolean;
+};
+
 export default class ContactForm extends Component {
   render() {
     return (
