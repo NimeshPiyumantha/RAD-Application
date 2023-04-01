@@ -85,6 +85,10 @@ export default class Home extends Component<ProfileProps, ProfileState> {
   }
 
   render() {
-    return <div className="pt-6 pr-28 pl-28 pb-6"></div>;
+    return (
+      <>
+        <div className="pt-6 pr-28 pl-28 pb-6"></div>
+      </>
+    );
   }
 }
