@@ -1,5 +1,6 @@
 import SendIcon from "@mui/icons-material/Send";
 import { Button, TextField } from "@mui/material";
+import { ChangeEvent, Component } from "react";
 
 type ContactFormProps = {};
 
@@ -9,7 +10,10 @@ type ContactFormState = {
   isValidEmail: boolean;
 };
 
-export default class ContactForm extends Component {
+export default class ContactForm extends Component<
+  ContactFormProps,
+  ContactFormState
+> {
   render() {
     return (
       <form className="w-full py-8 px-32 flex flex-col space-y-3">
