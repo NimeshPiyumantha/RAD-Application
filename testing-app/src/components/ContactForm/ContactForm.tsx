@@ -71,11 +71,14 @@ export default class ContactForm extends Component<
         <TextField
           label="Message"
           type="text"
-          variant="filled"
-          placeholder="Enter Your Message Here"
+          variant="outlined"
+          name="message"
+          placeholder="Enter your Message here"
           fullWidth={true}
+          value={this.state.message}
+          onChange={this.handleInputChange}
           multiline
-          minRows={10}
+          minRows={5}
           maxRows={Infinity}
           required
         />
