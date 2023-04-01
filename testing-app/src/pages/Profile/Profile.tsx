@@ -23,6 +23,12 @@ export default class Profile extends Component<ProfileProps, ProfileState> {
   constructor(props: ProfileProps) {
     super(props);
     this.state = {
+      title: "",
+      description: "",
+      hoursCount: 0,
+      lecturerName: "",
+      tagString: "",
+      isClickedCreateNewPost: false,
       postList: [
         {
           id: "1",
