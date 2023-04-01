@@ -12,6 +12,7 @@ export default class Contact extends Component {
         <div className="p-6">
           <ContactIntro />
           <div className="mt-3"></div>
+          <Contact
         </div>
       </>
     );
