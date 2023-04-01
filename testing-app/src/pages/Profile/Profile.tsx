@@ -9,7 +9,7 @@ type ProfileState = {
   postList: PostDetails[];
 };
 
-export default class Home extends Component<ProfileProps, ProfileState> {
+export default class Profile extends Component<ProfileProps, ProfileState> {
   constructor(props: ProfileProps) {
     super(props);
     this.state = {
@@ -88,7 +88,7 @@ export default class Home extends Component<ProfileProps, ProfileState> {
     return (
       <>
         <Header />
-        <div className="mt-20 py-6 px-32">
+        <div className="py-6 px-32">
           {this.state.postList.map((post, index) => (
             <Post
               key={post.id}
