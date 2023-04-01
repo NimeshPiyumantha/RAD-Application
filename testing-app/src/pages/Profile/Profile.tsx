@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { ChangeEvent, Component } from "react";
 import Post from "../../components/Post";
 import Header from "../../components/Header";
 import { PostDetails } from "../../types/PostDetails";
@@ -110,6 +110,19 @@ export default class Profile extends Component<ProfileProps, ProfileState> {
   handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     console.log("Submitted");
+  };
+
+  handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
+    console.log("Changed");
+    console.log(event.target.value);
+
+    // desctructuring assignment
+    const { name, value } = event.target;
+
+    this.setState((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
   };
 
   render() {
