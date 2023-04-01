@@ -14,6 +14,14 @@ export default class ContactForm extends Component<
   ContactFormProps,
   ContactFormState
 > {
+  constructor(props: ContactFormProps) {
+    super(props);
+    this.state = {
+      email: "",
+      message: "",
+      isValidEmail: false,
+    };
+  }
   render() {
     return (
       <form className="w-full py-8 px-32 flex flex-col space-y-3">
