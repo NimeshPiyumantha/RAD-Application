@@ -157,7 +157,12 @@ export default class Profile extends Component<ProfileProps, ProfileState> {
                   <h6>Discard Post</h6>
                   <RemoveCircleIcon />
                 </div>
-                <div className="w-full cursor-pointer p-8 bg-white rounded text-slate-400 flex justify-center items-center space-x-3 border border-slate-400"></div>
+                <div className="w-full cursor-pointer p-8 bg-white rounded text-slate-400 flex justify-center items-center space-x-3 border border-slate-400">
+                  <form
+                    className="flex flex-col space-y-3 w-full"
+                    onSubmit={this.handleSubmit}
+                  ></form>
+                </div>
               </>
             )}
           </div>
