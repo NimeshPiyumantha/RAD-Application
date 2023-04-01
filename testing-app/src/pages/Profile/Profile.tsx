@@ -187,6 +187,16 @@ export default class Profile extends Component<ProfileProps, ProfileState> {
                       maxRows={Infinity}
                       required
                     />
+                    <TextField
+                      label="Hours Count"
+                      type="number"
+                      variant="outlined"
+                      name="hoursCount"
+                      placeholder="Enter hours count"
+                      onChange={this.handleInputChange}
+                      value={this.state.hoursCount}
+                      fullWidth={true}
+                    />
                   </form>
                 </div>
               </>
