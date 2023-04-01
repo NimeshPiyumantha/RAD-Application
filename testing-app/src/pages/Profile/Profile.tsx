@@ -130,7 +130,7 @@ export default class Profile extends Component<ProfileProps, ProfileState> {
       <>
         <Header />
         <div className="py-6 px-32">
-        <div className="w-full flex flex-col space-y-1">
+          <div className="w-full flex flex-col space-y-1">
             {!this.state.isClickedCreateNewPost ? (
               <>
                 <div
@@ -149,6 +149,19 @@ export default class Profile extends Component<ProfileProps, ProfileState> {
                 </div>
               </>
             ) : (
+              <>
+                <div
+                  className="cursor-pointer w-full p-4 bg-accent-navy-200 text-white rounded flex justify-between items-center"
+                  onClick={this.handleClickCreateNewPost}
+                >
+                  <h6>Discard Post</h6>
+                  <RemoveCircleIcon />
+                </div>
+                <div className="w-full cursor-pointer p-8 bg-white rounded text-slate-400 flex justify-center items-center space-x-3 border border-slate-400"></div>
+              </>
+            )}
+          </div>
+
           {this.state.postList.map((post, index) => (
             <Post
               key={post.id}
