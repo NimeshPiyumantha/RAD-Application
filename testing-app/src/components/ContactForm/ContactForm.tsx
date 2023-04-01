@@ -22,6 +22,27 @@ export default class ContactForm extends Component<
       isValidEmail: false,
     };
   }
+
+  handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = event.target;
+
+    const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    if (name === "email") {
+      if (emailRegex.test(value)) {
+        this.setState((prevState) => ({
+          ...prevState,
+          isValidEmail: true,
+        }));
+      } else {
+        this.setState((prevState) => ({
+          ...prevState,
+          isValidEmail: false,
+        }));
+      }
+    }
+
+
   render() {
     return (
       <form className="w-full py-8 px-32 flex flex-col space-y-3">
