@@ -197,6 +197,16 @@ export default class Profile extends Component<ProfileProps, ProfileState> {
                       value={this.state.hoursCount}
                       fullWidth={true}
                     />
+                    <TextField
+                      label="Lecturer Name"
+                      type="text"
+                      variant="outlined"
+                      placeholder="Enter Lecturer Name"
+                      name="lecturerName"
+                      onChange={this.handleInputChange}
+                      value={this.state.lecturerName}
+                      fullWidth={true}
+                    />
                   </form>
                 </div>
               </>
