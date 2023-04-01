@@ -227,6 +227,8 @@ export default class Profile extends Component<ProfileProps, ProfileState> {
             )}
           </div>
 
+          <Divider className="!my-5" />
+
           {this.state.postList.map((post, index) => (
             <Post
               key={post.id}
