@@ -11,6 +11,12 @@ type ProfileProps = {};
 
 type ProfileState = {
   postList: PostDetails[];
+  isClickedCreateNewPost: boolean;
+  title: string;
+  description: string;
+  hoursCount: number;
+  lecturerName: string;
+  tagString: string;
 };
 
 export default class Profile extends Component<ProfileProps, ProfileState> {
@@ -93,79 +99,6 @@ export default class Profile extends Component<ProfileProps, ProfileState> {
       <>
         <Header />
         <div className="py-6 px-32">
-          <div className="w-full flex flex-col space-y-1">
-            <>
-              <div className="cursor-pointer w-full p-4 bg-accent-navy-200 text-white rounded flex justify-between items-center">
-                <h6>Create New Post</h6>
-                <AddCircleIcon />
-              </div>
-              <div className="cursor-pointer p-8 bg-white rounded text-slate-400 flex justify-center items-center space-x-3 border border-slate-400">
-                <PostAddIcon />
-                <h6>Your New Post</h6>
-              </div>
-            </>
-            : (
-            <>
-              <div className="cursor-pointer w-full p-4 bg-accent-navy-200 text-white rounded flex justify-between items-center">
-                <h6>Discard Post</h6>
-                <RemoveCircleIcon />
-              </div>
-              <div className="w-full cursor-pointer p-8 bg-white rounded text-slate-400 flex justify-center items-center space-x-3 border border-slate-400">
-                <form className="flex flex-col space-y-3 w-full">
-                  <TextField
-                    label="Post Title"
-                    type="text"
-                    variant="outlined"
-                    name="title"
-                    placeholder="Enter post title"
-                    fullWidth={true}
-                    required
-                  />
-                  <TextField
-                    label="Post Description"
-                    type="text"
-                    variant="outlined"
-                    name="description"
-                    placeholder="Enter post description"
-                    fullWidth={true}
-                    multiline
-                    minRows={5}
-                    maxRows={Infinity}
-                    required
-                  />
-                  <TextField
-                    label="Hours Count"
-                    type="number"
-                    variant="outlined"
-                    name="hoursCount"
-                    placeholder="Enter hours count"
-                    fullWidth={true}
-                  />
-                  <TextField
-                    label="Lecturer Name"
-                    type="text"
-                    variant="outlined"
-                    placeholder="Enter Lecturer Name"
-                    name="lecturerName"
-                    fullWidth={true}
-                  />
-                  <TextField
-                    label="Tags (Comma separated tags)"
-                    type="text"
-                    variant="outlined"
-                    name="tagString"
-                    placeholder="Enter comma separated tags"
-                    fullWidth={true}
-                    required
-                  />
-                  <button className="py-2 bg-accent-navy-200 text-white rounded">
-                    <h6>Publish Post</h6>
-                  </button>
-                </form>
-              </div>
-            </>
-            )
-          </div>
           {this.state.postList.map((post, index) => (
             <Post
               key={post.id}
