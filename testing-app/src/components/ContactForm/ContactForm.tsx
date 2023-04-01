@@ -54,8 +54,11 @@ export default class ContactForm extends Component<
         <TextField
           label="Email"
           type="email"
-          variant="filled"
-          placeholder="Enter Your Email Here"
+          variant="outlined"
+          value={this.state.email}
+          name="email"
+          onChange={this.handleInputChange}
+          placeholder="Enter your valid Email here"
           fullWidth={true}
           required
         />
