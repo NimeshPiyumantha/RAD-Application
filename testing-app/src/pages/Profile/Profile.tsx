@@ -12,6 +12,76 @@ type ProfileState = {
 export default class Home extends Component<ProfileProps, ProfileState> {
   constructor(props: ProfileProps) {
     super(props);
+    this.state = {
+      postList: [
+        {
+          id: "1",
+          title: "Lecture Day 01",
+          description: (
+            <p>
+              Lecture D01 - Lorem ipsum dolor sit amet consectetur, adipisicing
+              elit. Eligendi alias laborum accusantium iusto molestias. Magnam
+              nisi atque, nihil, ex quaerat quam velit deserunt consequatur
+              soluta pariatur cumque accusamus consequuntur. Quidem! Lorem ipsum
+              dolor sit amet consectetur, adipisicing elit. Eligendi alias
+              laborum accusantium iusto molestias. Magnam nisi atque, nihil, ex
+              quaerat quam velit deserunt consequatur soluta pariatur cumque
+              accusamus consequuntur. Quidem! Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Eligendi alias laborum accusantium
+              iusto molestias. Magnam nisi atque, nihil, ex quaerat quam velit
+              deserunt consequatur soluta pariatur cumque accusamus
+              consequuntur. Quidem!
+            </p>
+          ),
+          hoursCount: 8,
+          tags: ["intro", "typescript"],
+        },
+        {
+          id: "2",
+          title: "Lecture Day 02",
+          description: (
+            <p>
+              Lecture D02 - Lorem ipsum dolor sit amet consectetur, adipisicing
+              elit. Eligendi alias laborum accusantium iusto molestias. Magnam
+              nisi atque, nihil, ex quaerat quam velit deserunt consequatur
+              soluta pariatur cumque accusamus consequuntur. Quidem! Lorem ipsum
+              dolor sit amet consectetur, adipisicing elit. Eligendi alias
+              laborum accusantium iusto molestias. Magnam nisi atque, nihil, ex
+              quaerat quam velit deserunt consequatur soluta pariatur cumque
+              accusamus consequuntur. Quidem! Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Eligendi alias laborum accusantium
+              iusto molestias. Magnam nisi atque, nihil, ex quaerat quam velit
+              deserunt consequatur soluta pariatur cumque accusamus
+              consequuntur. Quidem!
+            </p>
+          ),
+          hoursCount: 6,
+          lecturerName: "Chanu",
+          tags: ["react", "tailwind"],
+        },
+        {
+          id: "3",
+          title: "Lecture Day 03",
+          description: (
+            <p>
+              Lecture D03 - Lorem ipsum dolor sit amet consectetur, adipisicing
+              elit. Eligendi alias laborum accusantium iusto molestias. Magnam
+              nisi atque, nihil, ex quaerat quam velit deserunt consequatur
+              soluta pariatur cumque accusamus consequuntur. Quidem! Lorem ipsum
+              dolor sit amet consectetur, adipisicing elit. Eligendi alias
+              laborum accusantium iusto molestias. Magnam nisi atque, nihil, ex
+              quaerat quam velit deserunt consequatur soluta pariatur cumque
+              accusamus consequuntur. Quidem! Lorem ipsum dolor sit amet
+              consectetur, adipisicing elit. Eligendi alias laborum accusantium
+              iusto molestias. Magnam nisi atque, nihil, ex quaerat quam velit
+              deserunt consequatur soluta pariatur cumque accusamus
+              consequuntur. Quidem!
+            </p>
+          ),
+          tags: ["Lifecycle", "rounting", "structure"],
+        },
+      ],
+    };
   }
 
   render() {
