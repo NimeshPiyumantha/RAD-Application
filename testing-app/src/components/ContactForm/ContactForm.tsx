@@ -42,6 +42,11 @@ export default class ContactForm extends Component<
       }
     }
 
+    this.setState((prevState) => ({
+      ...prevState,
+      [name]: value,
+    }));
+  };
 
   render() {
     return (
