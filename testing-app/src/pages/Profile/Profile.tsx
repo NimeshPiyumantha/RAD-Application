@@ -218,6 +218,9 @@ export default class Profile extends Component<ProfileProps, ProfileState> {
                       fullWidth={true}
                       required
                     />
+                    <button className="py-2 bg-accent-navy-200 text-white rounded">
+                      <h6>Publish Post</h6>
+                    </button>
                   </form>
                 </div>
               </>
