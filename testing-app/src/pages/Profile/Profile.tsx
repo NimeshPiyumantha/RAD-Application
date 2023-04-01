@@ -88,7 +88,7 @@ export default class Home extends Component<ProfileProps, ProfileState> {
     return (
       <>
         <Header />
-        <div className="pt-6 pr-28 pl-28 pb-6">
+        <div className="mt-20 py-6 px-32">
           {this.state.postList.map((post, index) => (
             <Post
               key={post.id}
