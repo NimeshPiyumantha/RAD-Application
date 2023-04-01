@@ -107,6 +107,11 @@ export default class Profile extends Component<ProfileProps, ProfileState> {
     }));
   };
 
+  handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    console.log("Submitted");
+  };
+
   render() {
     return (
       <>
