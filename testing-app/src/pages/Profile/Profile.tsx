@@ -161,7 +161,19 @@ export default class Profile extends Component<ProfileProps, ProfileState> {
                   <form
                     className="flex flex-col space-y-3 w-full"
                     onSubmit={this.handleSubmit}
-                  ></form>
+                  >
+                    <TextField
+                      label="Post Title"
+                      type="text"
+                      variant="outlined"
+                      name="title"
+                      placeholder="Enter post title"
+                      onChange={this.handleInputChange}
+                      value={this.state.title}
+                      fullWidth={true}
+                      required
+                    />
+                  </form>
                 </div>
               </>
             )}
