@@ -207,6 +207,17 @@ export default class Profile extends Component<ProfileProps, ProfileState> {
                       value={this.state.lecturerName}
                       fullWidth={true}
                     />
+                    <TextField
+                      label="Tags (Comma separated tags)"
+                      type="text"
+                      variant="outlined"
+                      name="tagString"
+                      placeholder="Enter comma separated tags"
+                      onChange={this.handleInputChange}
+                      value={this.state.tagString}
+                      fullWidth={true}
+                      required
+                    />
                   </form>
                 </div>
               </>
