@@ -62,6 +62,12 @@ export default class ContactForm extends Component<
           fullWidth={true}
           required
         />
+        {!this.state.isValidEmail && this.state.email.length > 0 ? (
+          <span className="text-red-700">
+            <h6>Please enter a valid email</h6>
+          </span>
+        ) : null}
+
         <TextField
           label="Message"
           type="text"
