@@ -88,7 +88,11 @@ export default class Home extends Component<ProfileProps, ProfileState> {
     return (
       <>
         <Header />
-        <div className="pt-6 pr-28 pl-28 pb-6"></div>
+        <div className="pt-6 pr-28 pl-28 pb-6">
+          {this.state.postList.map((post, index) => (
+            
+          ))}
+        </div>
       </>
     );
   }
