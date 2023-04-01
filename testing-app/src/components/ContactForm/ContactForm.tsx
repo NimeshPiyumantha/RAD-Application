@@ -1,4 +1,3 @@
-import React, { Component } from "react";
 import SendIcon from "@mui/icons-material/Send";
 import { Button, TextField } from "@mui/material";
 
