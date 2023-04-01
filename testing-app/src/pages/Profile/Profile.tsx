@@ -1,15 +1,7 @@
-import React, {Component} from "react";
-import Header from "../../components/Header";
+import React, { Component } from "react";
 
-export default class Profile extends Component {
-    render() {
-        return (
-            <>
-                <Header/>
-                <div className="p-6">
-                    <h1>Profile Page</h1>
-                </div>
-            </>
-        );
-    }
+export default class Home extends Component {
+  render() {
+    return <div className="pt-6 pr-28 pl-28 pb-6"></div>;
+  }
 }
