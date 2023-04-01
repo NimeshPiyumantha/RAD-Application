@@ -173,6 +173,20 @@ export default class Profile extends Component<ProfileProps, ProfileState> {
                       fullWidth={true}
                       required
                     />
+                    <TextField
+                      label="Post Description"
+                      type="text"
+                      variant="outlined"
+                      name="description"
+                      placeholder="Enter post description"
+                      value={this.state.description}
+                      onChange={this.handleInputChange}
+                      fullWidth={true}
+                      multiline
+                      minRows={5}
+                      maxRows={Infinity}
+                      required
+                    />
                   </form>
                 </div>
               </>
