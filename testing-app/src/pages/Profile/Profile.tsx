@@ -110,18 +110,67 @@ export default class Profile extends Component<ProfileProps, ProfileState> {
   handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     console.log("Submitted");
+
+    console.log(this.state);
+
+    // destructuring assignment
+    const { title, description, hoursCount, lecturerName, tagString } =
+      this.state;
+
+    let tagsArray = this.convertTagStringToArray(tagString);
+
+    let newPost = {
+      id: "4",
+      title: title,
+      description: description,
+      hoursCount: hoursCount,
+      lecturerName: lecturerName,
+      tags: tagsArray,
+    };
+
+    // Here, you should pass the post object to back-end for the stroring purposes
+
+    // According to the response from bac-end, you should add the post object to the list
+
+    this.setState((prevState) => ({
+      postList: [newPost, ...prevState.postList],
+    }));
+
+    this.clearState();
+  };
+
+  convertTagStringToArray = (tagString: string): string[] => {
+    if (tagString !== "") {
+      return tagString.split(",").map((tag) => tag.trim());
+    }
+    return [];
   };
 
   handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
-    console.log("Changed");
-    console.log(event.target.value);
-
     // desctructuring assignment
-    const { name, value } = event.target;
+    const { name, value, type } = event.target;
+
+    const inputValue = type === "number" ? parseInt(value) : value;
+
+    console.log(typeof inputValue);
+    if (name === "hoursCount" && Number(inputValue) < 0) {
+      return;
+    }
 
     this.setState((prevState) => ({
       ...prevState,
       [name]: value,
+    }));
+  };
+
+  clearState = () => {
+    this.setState((prevState) => ({
+      ...prevState,
+      title: "",
+      description: "",
+      hoursCount: 0,
+      lecturerName: "",
+      tagString: "",
     }));
   };
 
