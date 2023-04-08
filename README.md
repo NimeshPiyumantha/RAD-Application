@@ -2,7 +2,6 @@
 
 **This is a learning RAD-Application Development.**
 
-
 ### - Back End
 
 - **node js**
