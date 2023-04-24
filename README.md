@@ -5,8 +5,6 @@
 ### - Back End
 - **node js**
 
-
-
 ### - Front End
 
 - **React**
@@ -15,9 +13,6 @@
 
 ##
 ## - 1st_Application
-
-
-
 - **Create new index.ts**
 
 - **Intall type script**
@@ -105,7 +100,6 @@ npm install @mui/icons-material @mui/material @emotion/styled @emotion/react
 ```
 npm install @mui/material @emotion/react @emotion/styled
 ```
-
 ##
 
 ### Clone this repository ✅
