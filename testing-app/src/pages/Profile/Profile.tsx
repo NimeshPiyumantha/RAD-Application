@@ -6,6 +6,7 @@ import AddCircleIcon from "@mui/icons-material/AddCircle";
 import PostAddIcon from "@mui/icons-material/PostAdd";
 import RemoveCircleIcon from "@mui/icons-material/RemoveCircle";
 import { Divider, TextField } from "@mui/material";
+import api from "../../axios";
 
 type ProfileProps = {};
 
@@ -39,6 +40,21 @@ export default class Profile extends Component<ProfileProps, ProfileState> {
     this.retrieveAllPosts();
   }
 
+  retrieveAllPosts = () => {
+    api
+      .get("post")
+      .then((res) => {
+        console.log(res);
+        this.setState((prevState) => ({
+          ...prevState,
+          postList: res.data.responseData,
+        }));
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
   handleClickCreateNewPost = () => {
     this.setState((prevState) => ({
       ...prevState,
@@ -53,18 +69,24 @@ export default class Profile extends Component<ProfileProps, ProfileState> {
     console.log(this.state);
 
     // destructuring assignment
-    const { title, description, hoursCount, lecturerName, tagString } =
-      this.state;
+    const {
+      title,
+      categoryName,
+      description,
+      hoursCount,
+      lecturerName,
+      tagString,
+    } = this.state;
 
     let tagsArray = this.convertTagStringToArray(tagString);
 
     let newPost = {
-      id: "4",
       title: title,
       description: description,
       hoursCount: hoursCount,
       lecturerName: lecturerName,
       tags: tagsArray,
+      categoryName: categoryName,
     };
 
     // Here, you should pass the post object to back-end for the stroring purposes
