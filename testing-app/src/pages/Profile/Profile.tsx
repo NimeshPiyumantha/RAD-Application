@@ -264,12 +264,14 @@ export default class Profile extends Component<ProfileProps, ProfileState> {
 
           {this.state.postList.map((post) => (
             <Post
-              key={post.id}
+              key={post._id}
+              _id={post._id}
               title={post.title}
               description={post.description}
               tags={post.tags}
               hoursCount={post.hoursCount}
               lecturerName={post.lecturerName}
+              removePostFromList={this.removePostFromList}
             />
           ))}
         </div>
