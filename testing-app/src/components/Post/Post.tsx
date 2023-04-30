@@ -54,6 +54,9 @@ export default class Post extends Component<PostProps, PostState> {
               <Tag key={index} text={tagText} />
             ))}
           </span>
+          <button onClick={() => this.deletePost(this.props._id)}>
+            <DeleteIcon />
+          </button>
         </div>
       </div>
     );
