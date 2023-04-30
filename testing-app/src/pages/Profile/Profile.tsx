@@ -141,6 +141,12 @@ export default class Profile extends Component<ProfileProps, ProfileState> {
     }));
   };
 
+  removePostFromList = (postId: string) => {
+    this.setState((prevstate) => ({
+      postList: prevstate.postList.filter((post) => post._id !== postId),
+    }));
+  };
+
   render() {
     return (
       <>
@@ -186,6 +192,17 @@ export default class Profile extends Component<ProfileProps, ProfileState> {
                       placeholder="Enter post title"
                       onChange={this.handleInputChange}
                       value={this.state.title}
+                      fullWidth={true}
+                      required
+                    />
+                     <TextField
+                      label="Category"
+                      type="text"
+                      variant="outlined"
+                      name="categoryName"
+                      placeholder="Enter Category Name"
+                      onChange={this.handleInputChange}
+                      value={this.state.categoryName}
                       fullWidth={true}
                       required
                     />
