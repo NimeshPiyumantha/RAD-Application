@@ -17,6 +17,7 @@ type ProfileState = {
   hoursCount: number;
   lecturerName: string;
   tagString: string;
+  categoryName: string;
 };
 
 export default class Profile extends Component<ProfileProps, ProfileState> {
