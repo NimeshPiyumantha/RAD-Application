@@ -35,6 +35,10 @@ export default class Profile extends Component<ProfileProps, ProfileState> {
     };
   }
 
+  componentDidMount(): void {
+    this.retrieveAllPosts();
+  }
+
   handleClickCreateNewPost = () => {
     this.setState((prevState) => ({
       ...prevState,
