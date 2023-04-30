@@ -91,13 +91,18 @@ export default class Profile extends Component<ProfileProps, ProfileState> {
 
     // Here, you should pass the post object to back-end for the stroring purposes
 
-    // According to the response from bac-end, you should add the post object to the list
-
-    this.setState((prevState) => ({
-      postList: [newPost, ...prevState.postList],
-    }));
-
-    this.clearState();
+    api
+      .post("post", newPost)
+      .then((res) => {
+        console.log(res);
+        this.setState((prevState) => ({
+          postList: [...prevState.postList, res.data.responseData],
+        }));
+        this.clearState();
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
 
   convertTagStringToArray = (tagString: string): string[] => {
@@ -132,6 +137,7 @@ export default class Profile extends Component<ProfileProps, ProfileState> {
       hoursCount: 0,
       lecturerName: "",
       tagString: "",
+      categoryName: "",
     }));
   };
 
