@@ -1,5 +1,7 @@
 import { Component } from "react";
 import Tag from "../Tag";
+import DeleteIcon from "@mui/icons-material/Delete";
+import api from "../../axios";
 
 type PostProps = {
   _id: string;
@@ -14,6 +16,20 @@ type PostProps = {
 type PostState = {};
 
 export default class Post extends Component<PostProps, PostState> {
+  deletePost = (postId: string) => {
+    api
+      .delete(`post/${postId}`)
+      .then((res) => {
+        console.log(res);
+        if (this.props.removePostFromList) {
+          this.props.removePostFromList(postId);
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
   render() {
     return (
       <div className="flex justify-center">
