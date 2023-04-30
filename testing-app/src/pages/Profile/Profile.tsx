@@ -195,7 +195,7 @@ export default class Profile extends Component<ProfileProps, ProfileState> {
                       fullWidth={true}
                       required
                     />
-                     <TextField
+                    <TextField
                       label="Category"
                       type="text"
                       variant="outlined"
