@@ -1,8 +1,8 @@
- export type PostDetails = {
-    id?: string;
-    title: string;
-    description: React.ReactNode;
-    hoursCount?: number;
-    lecturerName?: string;
-    tags: string[];
-  };
+export type PostDetails = {
+  _id: string;
+  title: string;
+  description: string;
+  hoursCount?: number;
+  lecturerName?: string;
+  tags: string[];
+};
